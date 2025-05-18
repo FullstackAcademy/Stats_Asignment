@@ -1,10 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <title>Stats</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Block Counter</title>
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial;
+        background: lightblue;
+      }
+      h1 {
+        color: purple;
+      }
+      input {
+        padding: 10px;
+        width: 200px;
+      }
+      button {
+        padding: 10px;
+        background: orange;
+        color: white;
+      }
+
+      #results {
+        margin: 20px;
+        background: white;
+        padding: 10px;
+      }
+    </style>
   </head>
   <body>
-    <h1>Check the browser console :)</h1>
+    <h1>My Block Counter</h1>
+    <p>Enter numbers separated by commas (like 1,2,3):</p>
+    <input type="text" id="numberBox" placeholder="e.g., 1,2,3" />
+    <button onclick="playWithNumbers()">Go!</button>
+    <div id="results">Results will show here!</div>
+    <script src="numbers.js"></script>
   </body>
 </html>
